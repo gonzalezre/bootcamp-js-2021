@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test for the project</title>
+    
+</head>
+<body>
+    <form action="Index.html">
+        <input type="hidden" id="txtId" name="Id">
+        <div>
+            <div><label for="txtName">Name</label></div>
+            <div><input type="text" name="Name" id="txtName"></div>
+        </div>
+        <div>
+            <div><label for="txtQuantity">Quantity</label></div>
+            <div><input type="number" name="Quantity" id="txtQuantity"></div>
+        </div>
+        <div>
+            <div><label for="txtPrice">Price</label></div>
+            <div><input type="number" name="Price" id="txtPrice"></div>
+        </div>
+        <div>
+            <div><label for="selectCategory">Category</label></div>
+            <div>
+                <select name="Category" id="selectCategory">
+                    <option value="0">Please select a category</option>
+                    <option value="1">Category one</option>
+                    <option value="2">Category two</option>
+                    <option value="3">Category three</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div><input type="submit" id="btnSave" value="Save" ></div>
+        </div>
+    </form>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Code</td>
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="totalQuantity">0</td>
+                    <td id="totalPrice">0</td>
+                    <td id="grandTotal">0</td>
+                    <td>
+                        <a href="#">Add</a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </div>
+    <script type="text/JavaScript" src="index.js"></script>
+</body>
+</html>
